@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator JavaScript</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
-</body>
+<body class="bg-gray-500">
+  
+
+      <div class="judul  w-md mx-auto mt-5 p-5 rounded-lg shadow-lg bg-white">
+          <h1 class="text-center text-2xl font-bold">Kalkulator JavaScript</h1>
+        </div>
+        
+        <div class="kalkulator w-md mx-auto mt-5 p-5 rounded-lg shadow-lg bg-white mb-2">
+            <!-- form input -->
+            <div class="row  shadaw-md text-end text-xl shadow-xl mb-5  " >
+                <input class="bg-gray-200 text-gray-900 font-bold text-2xl w-full h-16 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent inset-ring-1 rounded-md text-end p-5" type="text" id="form" placeholder="0" disabled>
+                </input>
+            </div>
+            <div class="row">
+                <button onclick="hapus()" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold hover:bg-gray-400 box-border size-22 m-2">AC</button>
+                <button onclick="hapusSatu()" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold hover:bg-gray-400 box-border size-22 ">DEL</button>
+                <button onclick="tambahAngka('%')" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold text-xl hover:bg-gray-400 box-border size-22 m-2">%</button>
+                <button onclick="tambahAngka('/')" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold  text-xl hover:bg-gray-400 box-border size-22 ">/</button>
+            </div>
+            <div class="row">
+                <button onclick="tambahAngka('7')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">7</button>
+                <button onclick="tambahAngka('8')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 ">8</button>
+                <button onclick="tambahAngka('9')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">9</button>
+                <button onclick="tambahAngka('*')" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold text-lg hover:bg-gray-400 box-border size-22 ">X</button>
+            </div>
+            <div class="row">
+                <button onclick="tambahAngka('4')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">4</button>
+                <button onclick="tambahAngka('5')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 ">5</button>
+                <button onclick="tambahAngka('6')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">6</button>
+                <button onclick="tambahAngka('+')" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold text-2xl hover:bg-gray-400 box-border size-22 ">+</button>
+            </div>
+            <div class="row">
+                <button onclick="tambahAngka('1')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">1</button>
+                <button onclick="tambahAngka('2')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 ">2</button>
+                <button onclick="tambahAngka('3')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">3</button>
+                <button onclick="tambahAngka('-')" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold text-3xl hover:bg-gray-400 box-content size-22 ">-</button>
+            </div>
+            <div class="row">
+                <button onclick="tambahAngka('0')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-1">0</button>
+                <button onclick="tambahAngka('00')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 m-2">00</button>
+                <button onclick="tambahAngka('.')" class=" bg-gray-300 rounded-lg shadow-xl  font-bold hover:bg-gray-400 box-border size-22 ">.</button>
+                <button onclick="hitung()" class=" bg-gray-300 rounded-lg shadow-xl text-blue-600 font-bold text-2xl hover:bg-gray-400 box-content size-22 m-2">=</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
