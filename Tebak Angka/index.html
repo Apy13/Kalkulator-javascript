@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container text-center items-center p-10">
+        <h1 class=" font-bold text-3xl">Tebak Angka 1 - 10</h1>
+    </div>
+
+    <div class="container text-center items-center p-10">
+        <input type="number" id="inputTebak" class="border p-2 rounded mt-4" placeholder="Masukkan tebakanmu">
+        <button id="btnTebak" class="bg-blue-500 text-white p-2 rounded mt-4" onclick="tebakAngka()">Kirim Tebakan</button>
+        <button id="btnReset" class="bg-red-500 text-white p-2 rounded mt-4" onclick="resetTebakan()">Reset</button>
+        <p id="hasilTebak" class="mt-4">hasil</p>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
